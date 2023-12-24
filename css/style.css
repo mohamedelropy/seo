@@ -1,0 +1,356 @@
+* {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    padding: 10px 90px;
+    position: relative;
+    position: fixed;
+    z-index: 2;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+
+header .logo a{
+    text-decoration: none;
+    color: #00A4ED;
+}
+
+.logo h3 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00A4ED;
+}
+
+.logo h3 span {
+    color: #FE3E3F;
+}
+
+header ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div .Home a {
+    color: #FE3E3F;
+}
+
+
+ ul {
+    display: flex;
+    padding-top: 15px;
+    gap:30px;
+    width: 100%;
+    height: 100%;
+}
+
+header div ul li {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight:400;
+    text-align: center;
+}
+
+ul li a:hover {
+    color: #FE3E3F;
+    transition: 0.3s;
+}
+
+header div .co{
+    background-color: #FE3E3F;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+
+header div .co:hover{
+    background-color: #00A4ED;
+    transition: 0.3s;
+}
+
+header div .co a{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.home {
+    cursor: pointer;
+    display: none;
+}
+
+.home div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: black;
+}
+
+@media ( max-width : 1100px ) {
+    header {
+        padding: 10px 100px;
+    }
+    
+    header div .co {
+        display: none;
+    }
+
+    
+
+    header div ul li a{
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+
+}
+
+@media ( max-width : 770px ) {
+   header .home {
+        display: block;
+        margin-right: 20px;
+    }
+
+    header {
+        width: 100%;
+    }
+   header  ul {
+           position: absolute;
+           left: 0;
+           right: 0;
+           flex-direction: column;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           top: 70px;
+           background-color: #FAFAFA;
+           margin-left: 5%;
+           margin-right: 5%;
+    }
+
+
+}
+
+/* second section */
+
+.cointainer {
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.secondsection {
+    width: 100%;
+
+    height: 100vh;
+}
+
+.secondsection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondsection .imgright {
+    top: 0;
+    height: 500px;
+}
+
+.secondsection .imgleft img{
+    width: 190px;
+    height: 550px;
+}
+
+.secondsection img{
+    height: 50%;
+}
+
+.secondsection .background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 220px 100px ;
+    position: absolute;
+}
+
+.secondsection .background .textcontent {
+    height: 350px;
+}
+
+.secondsection .background .textcontent h4 {
+    color: #FE3E3F;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+.secondsection .background .textcontent h2{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.secondsection .background .textcontent h2 .text1{
+    margin-top: 10px;
+}
+
+
+.secondsection .background .textcontent h2 .Digital{
+    color: #00A4ED;
+}
+
+.secondsection .background .textcontent h2 .Seo{
+    color: #FE3E3F;
+    text-transform: uppercase;
+}
+
+.secondsection .background .textcontent p{
+    width:570px;
+}
+
+.secondsection .background .textcontent p a{
+    text-decoration: none;
+}
+
+.secondsection .background .input{
+    position: relative;
+    margin-top: 40px;
+}
+
+.secondsection .background .input input:hover{
+    border : none ;
+    outline: 0;
+}
+
+.secondsection .background .input button{
+    position: absolute;
+    margin-right: 1px;
+    right: 150px;
+    top: 13px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #FE3E3F;
+    padding: 10px 20px;
+}
+
+.secondsection .background .inputsubmit {
+    width: 460px;
+    border: none;
+    border-radius: 30px;
+    height: 70px;
+    background-color: #00A4ED;
+    color: #FFFFFF;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.secondsection .background .piccontent img{
+    margin-left: 70px;
+}
+
+
+.thirdsection {
+    background-image: url(/images/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+.thirdsection .cointainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px ;
+}
+
+.thirdsection .cointainer .icons{
+    padding-left: 0px;
+}
+
+
+.thirdsection .cointainer .imagethirdsection img{
+    height: 490px;  
+}
+
+.thirdsection .cointainer .twoicons {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.thirdsection .cointainer .twoicons ul{
+    list-style-type: none;
+}
+
+
+
+.thirdsection .cointainer .twoicons div {
+    width: 450px;
+}
+
+
+.thirdsection .cointainer .twoicons h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.thirdsection .cointainer .twoicons p {
+    color: white;
+    line-height: 1cm;
+
+}
+
+.thirdsection .cointainer .twoicons .secondtwoicons {
+    padding-bottom: 50px;
+}
+
+
+
+.twoicons > div:nth-child(1) {
+    animation-delay: 0.5s; 
+}
+
+.twoicons > div:nth-child(2) {
+    animation-delay: 1s; 
+}
+
+.twoicons > div:nth-child(3) {
+    animation-delay: 1.5s; 
+}
+
+.twoicons > div:nth-child(4) {
+    animation-delay: 2s; 
+}
+
+
